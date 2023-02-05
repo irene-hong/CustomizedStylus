@@ -1,0 +1,710 @@
+/* ==UserStyle==
+@name           7/15/2022, 2:09:13 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document domain("douban.com") {
+
+  :root {
+    --douban: rgb(53, 111, 48);
+    --douban-light: #edf4ed;
+    --grey-text: rgb(51, 51, 51);
+    --light-grey-text: rgb(111, 111, 111);
+    --main-background: rgb(245, 245, 245);
+    --shadow: 0px 0px 1.4px rgba(0, 0, 0, 0.012),
+    0px 0px 11px rgba(0, 0, 0, 0.07);
+  }
+
+  /* Insert code here... */
+  body {
+    background-color: var(--main-background);
+  }
+
+  a {
+    color: var(--grey-text) !important;
+  }
+
+  a:hover {
+    color: var(--douban) !important;
+    background: transparent;
+    background-color: transparent;
+  }
+
+
+  #db-global-nav {
+    color: var(--grey-text);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--douban-light);
+    height: 60px;
+    box-shadow: 0px 0px 1.4px rgba(0, 0, 0, 0.012),
+    0px 0px 11px rgba(0, 0, 0, 0.07);
+  }
+
+  #db-global-nav .bd {
+    padding: 10px;
+  }
+
+  #db-global-nav .global-nav-items li {
+    font-size: 16px;
+  }
+
+  #db-global-nav .global-nav-items li a {
+    color: var(--douban);
+  }
+
+  #db-global-nav .top-nav-reminder a {
+    color: var(--grey-text);
+    font-size: 14px;
+  }
+
+  #db-global-nav .top-nav-info a {
+    color: var(--grey-text);
+    font-size: 14px;
+  }
+
+  #db-global-nav .top-nav-doubanapp a {
+    color: var(--grey-text);
+    font-size: 14px;
+  }
+
+  #db-global-nav .more-active .bn-more span {
+    color: var(--douban);
+  }
+
+  #db-global-nav .top-nav-reminder .more-items li {
+    border: none;
+  }
+
+  #db-global-nav .more-active .lnk-remind:link,
+  #db-global-nav .more-active .lnk-remind:visited,
+  #db-global-nav .more-active .lnk-remind:hover,
+  #db-global-nav .more-active .lnk-remind:active {
+    color: var(--douban);
+  }
+
+  #db-global-nav .nav-user-account .more-items {
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  #db-nav-sns {
+    background: transparent;
+    margin-bottom: 30px;
+  }
+
+  #db-global-nav .top-nav-reminder .num {
+    left: 3.5em;
+  }
+
+  #db-global-nav .top-nav-reminder .more-items {
+    width: 340px;
+    left: -175px;
+  }
+
+  #db-global-nav .top-nav-reminder .more-items li .new-reply-item .content {
+    width: 73%;
+    font-size: 14px;
+  }
+  #db-global-nav .top-nav-reminder .more-items li .content a {
+    color: var(--douban);
+  }
+
+  #db-global-nav .top-nav-reminder .more-items li .content a:hover {
+    background-color: transparent;
+  }
+
+  #db-global-nav .top-nav-reminder .more-items li .content a:visited {
+    color: var(--douban) !important;
+  }
+
+  #db-global-nav .top-nav-reminder .more-items li .item-req .ops {
+    width: 20%;
+  }
+
+  #db-global-nav .top-nav-reminder .more-items li .item-req .ops a:hover {
+    background-color: var(--douban-light)
+  }
+
+  #db-global-nav .top-nav-reminder .more-items a {
+    color: var(--light-grey-text)
+  }
+
+  #wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  #wrapper .grid-16-8 .article {
+    width: 65%;
+  }
+
+  #wrapper .grid-16-8 .aside {
+    width: 30%
+  }
+
+
+  .a_setting_close:link {
+    color: var(--grey-text);
+    font-size: 14px;
+  }
+
+  .frm-ft .btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-submit {
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    color: var(--grey-text);
+    font-size: 14px;
+  }
+
+  .btn-submit:hover {
+    background-color: transparent;
+    color: var(--douban);
+  }
+
+  #db-isay {
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--shadow);
+  }
+
+  #db-isay .btn-group {
+    display: none;
+  }
+
+  #db-isay .isay-links {
+    margin-top: 6px;
+    font-size: 15px;
+  }
+
+  #db-isay .isay-links a {
+    color: black;
+  }
+
+  #db-isay .isay-links a:hover {
+    background-color: transparent;
+    color: rgb(53, 111, 48);
+  }
+
+  #db-isay .isay-links .active {
+    font-weight: bold;
+    color: var(--douban);
+  }
+
+  #db-isay .bd {
+    width: 100%;
+  }
+
+  #db-isay .field {
+    border: none;
+    padding: 6px 0;
+  }
+
+  #db-isay .item {
+    background-color: rgb(240, 241, 244);
+    border: none;
+  }
+
+  #db-isay .field {
+    background: transparent;
+  }
+
+  #db-isay .btn {
+    background: transparent;
+    border: none;
+  }
+
+  .highlighter {
+    background: transparent;
+  }
+
+  #db-isay.active textarea {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  #db-isay textarea {
+    background-color: transparent;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 64px;
+    width: 100%;
+  }
+
+  #db-isay label {
+    color: rgb(147, 147, 147);
+  }
+
+  #db-isay.active .btn-group {
+    left: 20px;
+    bottom: 14px;
+  }
+
+  .statuses-setting .hd .a_status_setting {
+    right: 20px;
+    top: -9px;
+    color: #555;
+    font-size: 15px;
+  }
+
+  .lnk-share-tools {
+    display: none;
+  }
+
+  .status-wrapper {
+    background-color: white;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 1.4px rgba(0, 0, 0, 0.012),
+    0px 0px 11px rgba(0, 0, 0, 0.07);
+  }
+  
+  .status-item .status-saying {
+    margin-right: 16px;
+  }
+  
+  .status-item .quote-expand {
+    color: var(--douban);
+  }
+  
+  .status-item .mod {
+    padding: 10px;
+  }
+  .status-item .mod hd {
+    margin-top: 3px;
+  }
+  .status-item .mod blockquote {
+    margin-right: 16px;
+  }
+  
+  .status-item .mod blockquote p {
+    color: rgba(51, 51, 51);
+    font-size: 15px;
+  }
+
+  .status-item .mod .actions:not(.empty) a.btn:not(.lnk-reshare) {
+    font-size: 14px;
+    color: var(--light-grey-text);
+  }
+
+  .status-item .mod .actions:not(.empty) a.btn:not(.lnk-reshare):hover {
+    background: transparent;
+  }
+
+  .status-item .mod .actions count {
+    color: var(--douban) !important;
+  }
+
+  .usr-pic a img {
+    border-radius: 5px;
+  }
+
+  .reshared_by {
+    margin: 10px;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .lite-comments .lite-comment-item {
+    font-size: 14px;
+  }
+
+  .lite-comments .lite-comment-item .lite-comment-item-author {
+    color: var(--douban);
+  }
+
+  .lite-comments .lite-comment-item .lite-comment-item-content a {
+    color: var(--douban);
+    font-weight: bold;
+  }
+
+  .lite-comments .lite-comment-reply {
+    width: 98%;
+  }
+
+  .lite-comments .lite-comment-reply .lite-comment-reply-button {
+    border: none;
+    background: var(--douban-light);
+    color: var(--grey-text);
+    width: 6em;
+
+    font-size: 14px;
+  }
+
+  .lite-comments .lite-comment-reply .lite-comment-reply-text {
+    border: none;
+    background-color: var(--main-background);
+  }
+
+  .lite-comments .lite-comment-reply .lite-comment-reply-input {
+    background-color: transparent;
+  }
+
+  /*
+  隐藏豆瓣时间和正在发生
+  
+*/
+  .notify-mod {
+    display: none;
+  }
+  #anony-time {
+    display: none;
+  }
+  .notify-mod ~ div {
+    padding: 16px 0 16px 18px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    width: 100%;
+  }
+  
+  #friend {
+    margin-top: 10px;
+    padding: 6px;
+    background-color: white;
+    position: static !important; 
+    width: 100%;
+    box-shadow: var(--shadow);
+  }
+  
+  #doulist {
+    width: 100%;
+  }
+  
+  
+  #fp-sites,
+  #fp-sites ~ div {
+    display: none;
+  }
+
+  #dale_homepage_login_top_right {
+    display: none;
+  }
+  
+  .doumail-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .doumail-toolbar .tabs {
+    margin-left: auto;
+  }
+
+  
+  .doumail-toolbar .tabs a,
+  .doumail-toolbar .tabs a:visited,
+  .doumail-toolbar .tabs a:hover,
+  .doumail-toolbar .tabs a:active{
+    background: transparent !important;
+    font-size: 16px;
+  }
+  
+  
+  
+  .doumail-toolbar .inbox-filter {
+    font-size: 16px;
+  }
+
+  .doumail-list li {
+    margin-bottom: -4px;
+    border: white;
+    box-shadow: var(--shadow);
+    background-color: white;
+    border-radius: 10px;
+    height: 58px;
+  }
+  
+  .doumail-list li .operations {
+    right: 48px;
+  }
+
+  .doumail-list .select input {
+   
+    width: 20px;
+    height: 20px;
+  }
+
+
+  
+  .doumail-list .pic {
+    margin-right: 18px;
+  }
+  
+  .doumail-list .pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+  }
+  
+  .doumail-list .title {
+    overflow: visible;
+  }
+  
+  .doumail-list .title .sender .from {
+    position: relative;
+    left: -70px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .doumail-list .title .sender .time {
+    position: relative;
+    float: none;
+    top: 40px;
+  }
+  
+  .rich-content, .topic-richtext {
+    font-size: 16px;
+  }
+  
+  .topics .olt {
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--shadow);
+  }
+  
+  .topics .olt tbody tr {
+    height: 48px;
+  }
+  
+  .topics .olt tbody tr td {
+    padding: 8px;
+    font-size: 14px !important;
+    border: none;
+    border-bottom: 5px solid var(--main-background);
+  }
+  
+  .olt .td-subject a {
+    font-size: 15px;
+  }
+  
+  .aside {
+    position: sticky;
+    top: 75px;
+  }
+  
+  .profile-entry {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  
+  .profile-entry .pic a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  
+  .profile-entry .info a:link {
+    font-size: 17px;
+  }
+  
+  .profile-entry .info p a:link{
+    font-size: 14px;
+  }
+  
+  #g-reguler-groups {
+    background-color: white;
+    padding: 12px;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+  }
+  
+  #g-reguler-groups li img {
+    border-radius: 4px;
+    margin: 6px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #guess-favs {
+    background-color: white;
+    padding: 12px;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+  }
+  
+  #guess-favs .item {
+    display: flex;
+  }
+  
+  #guess-favs .item .pic a img {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+  }
+  
+  
+  #topic-content {
+    background-color: white;
+    padding: 15px;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    width: 96%;
+  }
+  
+  .topic-content .user-face,
+  .topic-content .user-face a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+  }
+  
+  .rich-content p, .topic-richtext p {
+    font-size: 15px;
+  }
+  
+  .topic-content .topic-doc {
+    width: 88%;
+    margin-left: 10px;
+    
+  }
+  
+  .topic-content .topic-doc h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .topic-content .create-time {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--light-grey-text);
+    font-style: italic;
+    margin-left: 210px;
+  }
+  
+  .topic-content .create-ip {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--light-grey-text);
+    font-style: italic;
+    margin-left: 10px;
+  }
+  
+  #comments {
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 15px;
+    border-radius: 6px;
+    width: 96%;
+    font-size: 15px;
+  }
+  
+  
+  .bg-img-green {
+    background-color: transparent;
+  }
+  .topic-reply li .reply-doc h4 {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+  
+  .topic-reply li p {
+    font-size: 15px;
+  }
+  
+  .topic-reply .user-face,
+  .pil {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  #g-side-info-member,
+  .aside .mod{
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+  .sort {
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+  }
+  .obssin .aob {
+    margin-left: 20px;
+  }
+  .obssin .aob img {
+    width: 70px;
+    border-radius: 4px;
+  }
+  
+  #photo {
+    width: 96%;
+  }
+  
+  #db-usr-profile {
+    background-color: white;
+    padding: 10px;
+    width: 96%;
+    box-shadow: var(--shadow);
+  }
+  .infobox .ex2, .infobox .ex1 {
+    background: none;
+  }
+  .infobox .bd {
+    background-color: white;
+    border: none;
+  }
+  #profile {
+    background-color: white;
+    box-shadow: var(--shadow);
+    width: 100%
+  }
+  #profile .userface {
+    width: 90px;
+    border-radius: 4px;
+  }
+  
+  
+  #group-topics {
+    margin-top: 14px;
+    background-color: white;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  #group-new-topic-bar~div .title {
+    font-size: 14px;
+  }
+  
+  /*
+  .paginator {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    top: 70%;
+    left: 80%;
+  }*/
+  
+}
